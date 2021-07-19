@@ -1,0 +1,30 @@
+body {
+  background: black;
+}
+
+.home-header {
+  height: 90vh;
+  width: auto;
+  background: black;
+  background: url(../img/megaphone-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portfolio-section {
+  margin-top: 156px;
+}
+
+.portfolio-logo {
+  width: 100px;
+  margin: 24px;
+}
+
+@media (min-width: 756px) {
+  .portfolio-logo {
+    width: 154px;
+  }
+}
+
+
+
