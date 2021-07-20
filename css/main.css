@@ -11,6 +11,10 @@ body {
   background-size: cover;
 }
 
+.home-header img {
+  width: 330px;
+}
+
 .portfolio-section {
   margin-top: 156px;
 }
