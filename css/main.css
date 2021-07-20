@@ -12,7 +12,14 @@ body {
 }
 
 .home-header img {
-  width: 330px;
+  width: 100%;
+  max-width: 290px;
+}
+
+@media (min-width: 756px) {
+  .home-header img {
+    width: 330px;
+  }
 }
 
 .portfolio-section {
