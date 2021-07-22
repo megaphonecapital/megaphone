@@ -1,25 +1,71 @@
+
+html {
+  height: 100%;
+  overflow: hidden;
+  color: black;
+}
+
 body {
-  background: black;
+  color: black;
+  margin:0;
+  padding:0;
+	-webkit-perspective: 1px;
+	perspective: 1px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-
-.home-header {
-  height: 90vh;
-  width: auto;
-  background: black;
-  background: url(../img/megaphone-header.jpg);
-  background-repeat: no-repeat;
+header {
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 30vw 0 5vw;
+  position: relative;
+  -webkit-transform-style: inherit;
+  transform-style: inherit;
+  width: 100vw;
+}
+header, header:before {
+  background: 50% 50% / cover;
+}
+header::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+	display: block;
+	background-color: #8a8;
+  background-image: url(../img/megaphone-header.jpg);
   background-size: cover;
+  -webkit-transform-origin: center center 0;
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
 }
 
-.home-header img {
+header img {
   width: 100%;
-  max-width: 290px;
+  max-width: 330px;
 }
 
 @media (min-width: 756px) {
-  .home-header img {
-    width: 330px;
+  header img {
+    /* width: 330px; */
+    max-width: 500px;
   }
+}
+
+.main {
+  background-color: black;
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+  height: 100vh;
 }
 
 .portfolio-section {
@@ -36,6 +82,5 @@ body {
     width: 154px;
   }
 }
-
 
 
