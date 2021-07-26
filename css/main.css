@@ -2,11 +2,11 @@
 html {
   height: 100%;
   overflow: hidden;
-  color: black;
+  color: #1E1E1E;
 }
 
 body {
-  color: black;
+  color: #1E1E1E;
   margin:0;
   padding:0;
 	-webkit-perspective: 1px;
@@ -26,9 +26,11 @@ header {
   transform-style: inherit;
   width: 100vw;
 }
+
 header, header:before {
   background: 50% 50% / cover;
 }
+
 header::before {
   bottom: 0;
   content: "";
@@ -37,7 +39,7 @@ header::before {
   right: 0;
   top: 0;
 	display: block;
-	background-color: black;
+	background-color: #1E1E1E;
   background-image: url(../img/megaphone-header.jpg);
   background-size: cover;
   -webkit-transform-origin: center center 0;
@@ -61,7 +63,7 @@ header img {
 }
 
 .main {
-  background-color: black;
+  background-color: #1E1E1E;
   max-width: 100%;
   position: relative;
   z-index: 2;
@@ -69,18 +71,33 @@ header img {
 }
 
 .portfolio-section {
-  margin-top: 156px;
+  margin-top: 78px;
 }
 
-.portfolio-logo {
-  width: 100px;
+.logos-spacing {
+  margin-bottom: 156px;
+}
+
+.portfolio-logo-wrapper {
+  padding: 12px;
+  width: auto;
+  min-height: 172px;
+  min-width: 172px;
+  height: auto;
   margin: 24px;
+  background: black;
 }
 
-@media (min-width: 756px) {
+/* @media (min-width: 756px) {
   .portfolio-logo {
     width: 154px;
   }
+} */
+
+.portfolio-logo {
+  max-width: 156px;
+  max-height: 156px;
+  padding: 12px;
 }
 
 
