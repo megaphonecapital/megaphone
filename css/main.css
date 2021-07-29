@@ -78,10 +78,10 @@ header img {
 }
 
 .portfolio-logo-wrapper {
-  padding: 12px;
+  /* padding: 12px; */
   width: auto;
-  min-height: 172px;
-  min-width: 172px;
+  max-height: 172px;
+  max-width: 172px;
   height: auto;
   margin: 24px;
   background: black;
@@ -96,18 +96,18 @@ header img {
 .portfolio-logo {
   max-width: 156px;
   max-height: 156px;
-  padding: 12px;
+  /* padding: 12px; */
 }
 
-.portfolio-logo.extra {
+/* .portfolio-logo.extra {
   padding: 20px;
 }
 
 .portfolio-logo.extra2 {
   padding: 32px;
-}
+} */
 
-.noselect {
+.noselect, .portfolio-logo, .portfolio-logo-wrapper {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
