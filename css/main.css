@@ -118,11 +118,30 @@ header img {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-.contact-button {
+.contact-margin {
   margin: 156px 0;
+}
+
+.contact-button {
   padding: 12px;
   border: 1px solid white;
   width: 110px;
+  /* color: white; */
+}
+
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-button:hover {
+  background: white;
+  
 }
 
 @media (min-width: 756px) {
